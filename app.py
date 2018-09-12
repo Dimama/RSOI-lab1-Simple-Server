@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from functions import is_palindrome, possible_palindrome
+import os
 
 app = Flask(__name__)
 
@@ -40,4 +41,4 @@ def catch_all(path):
 
 
 if __name__ == '__main__':	
-	app.run()
+	app.run(port=int(os.environ['PORT']))
