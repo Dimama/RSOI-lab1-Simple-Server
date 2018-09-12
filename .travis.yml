@@ -1,7 +1,7 @@
 language: python
 
 python:
-     - "3.5"
+     - "3.6"
 
 install:
      pip install -r requirements.txt
@@ -11,5 +11,5 @@ script:
 
 deploy:
      provider: heroku
-     api_key: ae17aaf9-cef2-44c3-b80f-c7a2594b26a0
-     app: rsoi-lab1-simple-server
+     api_key: $KEY
+     app: rsoi-server
