@@ -1,1 +1,1 @@
-web: gunicorn app:rsoi-lab1-simple-server
+web: gunicorn -b :$PORT app:app
