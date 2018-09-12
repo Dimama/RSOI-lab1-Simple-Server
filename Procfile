@@ -1,1 +1,1 @@
-web: PORT=$PORT python app.py
+worker: PORT=$PORT python app.py
